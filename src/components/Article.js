@@ -1,11 +1,9 @@
-function Article({ title, date, preview, readTime }) {
+function Article({ title, date = "January 1, 2025", preview }) {
   return (
     <article>
       <h3>{title}</h3>
-      <small>{date} • {readTime}</small>
+      <small>{date}</small>
       <p>{preview}</p>
-      <button>Read more →</button>
-      <hr />
     </article>
   )
 }

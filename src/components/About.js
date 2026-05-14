@@ -1,8 +1,7 @@
-function About({ authorName, aboutText }) {
+function About({ authorName, aboutText, image = "https://via.placeholder.com/150" }) {
   return (
     <aside>
-      <img src="https://via.placeholder.com/150" alt="blog logo" />
-      <h2>About {authorName}</h2>
+      <img src={image} alt="blog logo" />
       <p>{aboutText}</p>
     </aside>
   )
